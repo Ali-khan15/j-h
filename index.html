@@ -12,37 +12,64 @@
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-
     <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
 
-    
+    <style>
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow-x: hidden;
+        }
+        body {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        main {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .site-footer {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .site-footer > div:last-child {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        /* Gallery grid hover effect */
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 
 <body>
 
     <main>
 
-     <nav class="navbar navbar-expand-lg" style="background-color: #6d16df !important;">
+        <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg" style="background-color: #0dbbc9 !important;">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/jandhlogo.webp" class="navbar-brand-image img-fluid" alt="J & H Painting" 
+            <img src="images/jandhlogo.webp" class="navbar-brand-image img-fluid me-2" alt="J & H Painting" 
                  style="filter: none !important; max-width: 100px; height: auto; width: auto;">
+            <div class="d-flex flex-column">
+                <span style="color: white; font-size: 1.5rem; font-weight: 700; line-height: 1.2;">J & H</span>
+                <span style="color: white; font-size: 0.9rem; font-weight: 400; letter-spacing: 1px;">PAINTING</span>
+            </div>
         </a>
 
         <div class="d-lg-none ms-auto me-3">
             <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
                 role="button" aria-controls="offcanvasExample"
-                style="background-color: white; border-color: white; color: #6d16df !important;">Get
-                Quote</a>
+                style="background-color: white; border-color: white; color: #6d16df !important;">Get Quote</a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -52,292 +79,174 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-auto">
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_1" style="color: white !important;">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_2"
-                        style="color: white !important;">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_3"
-                        style="color: white !important;">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_4"
-                        style="color: white !important;">Gallery</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_5" style="color: white !important;">Contact
-                        Us</a>
-                </li>
+                <li class="nav-item"><a class="nav-link click-scroll" href="#section_1" style="color: white !important;">Home</a></li>
+                <li class="nav-item"><a class="nav-link click-scroll" href="#section_2" style="color: white !important;">About</a></li>
+                <li class="nav-item"><a class="nav-link click-scroll" href="#section_3" style="color: white !important;">Services</a></li>
+                <li class="nav-item"><a class="nav-link click-scroll" href="#section_4" style="color: white !important;">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link click-scroll" href="#section_5" style="color: white !important;">Contact Us</a></li>
             </ul>
 
             <div class="d-none d-lg-block ms-lg-3">
                 <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
                     role="button" aria-controls="offcanvasExample"
-                    style="background-color: white; border-color: white; color: #6d16df !important;">Get
-                    Quote</a>
+                    style="background-color: white; border-color: white; color: #6d16df !important;">Get Quote</a>
             </div>
         </div>
     </div>
 </nav>
 
-        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel" style="color: #322e2f;">Get a Free Quote</h5>
-
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
             <div class="offcanvas-body d-flex flex-column">
                 <form class="custom-form member-login-form" action="#" method="post" role="form">
-
                     <div class="member-login-form-body">
                         <div class="mb-4">
-                            <label class="form-label mb-2" for="member-login-number" style="color: #322e2f;">Full
-                                Name</label>
-
-                            <input type="text" name="full-name" id="full-name" class="form-control"
-                                placeholder="Your Name" required>
+                            <label class="form-label mb-2" for="full-name" style="color: #322e2f;">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Your Name" required>
                         </div>
-
                         <div class="mb-4">
-                            <label class="form-label mb-2" for="member-login-password"
-                                style="color: #322e2f;">Email</label>
-
-                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                placeholder="Your Email" required="">
+                            <label class="form-label mb-2" for="email" style="color: #322e2f;">Email</label>
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your Email" required="">
                         </div>
-
                         <div class="mb-4">
                             <label class="form-label mb-2" for="phone" style="color: #322e2f;">Phone</label>
-
-                            <input type="tel" name="phone" id="phone" class="form-control"
-                                placeholder="Your Phone Number">
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Your Phone Number">
                         </div>
-
                         <div class="col-lg-8 col-md-8 col-10 mx-auto">
-                            <button type="submit" class="form-control"
-                                style="background-color: #6d16df; border-color: #6d16df; color: white;">Submit</button>
+                            <button type="submit" class="form-control" style="background-color: #6d16df; border-color: #6d16df; color: white;">Submit</button>
                         </div>
                     </div>
                 </form>
-
                 <div class="mt-auto mb-5">
                     <p>
                         <strong class="me-3" style="color: #322e2f;">Any Questions?</strong>
-
-                        <a href="tel: 010-020-0340" class="contact-link" style="color: #6d16df;">
-                            (insert phone)
-                        </a>
+                        <a href="tel: 010-020-0340" class="contact-link" style="color: #6d16df;">(insert phone)</a>
                     </p>
                 </div>
             </div>
-
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#322e2f" fill-opacity="1"
-                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-                </path>
+                <path fill="#6dbedf" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
             </svg>
         </div>
 
+        <!-- Hero Section -->
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1" style="background-image: url('images/bg-7.png'); background-size: cover; background-position: top; background-repeat: no-repeat; position: relative;">
+            <div class="section-overlay" style="background-color: #000 !important; opacity: 0;"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2;">
+                <path fill="#0dbbc9" fill-opacity="1" d="M0,156L34.3,134.5C68.6,113,137,84.5,206,79.8C274.3,75,343,96.5,411,100.5C480,104.5,549,74.5,617,85.5C685.7,96.5,754,149,823,167C891.4,185,960,170,1029,156C1097.1,142,1166,126.5,1234,112C1302.9,97.5,1371,82,1406,74.8L1440,67.5L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+            </svg>
+            <div class="container" style="position: relative; z-index: 3;">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-start">
+                        <h2 class="text-white">J & H Painting</h2>
+                        <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                            <span class="cd-words-wrapper d-block text-start" style="width: 100%;">
+                                <b class="is-visible" style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">with Expert Painting Services</b>
+                                <b style="color: #6dbedf !important; display: inline-block; width: 100%; text-align: left;">Professional</b>
+                                <b style="color: #6d16df !important; display: inline-block; width: 100%; text-align: left;">Reliable</b>
+                                <b style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">Beautiful</b>
+                            </span>
+                        </h1>
+                        <p class="text-white mb-4" style="max-width: 800px;">From color consultation to flawless finishes,<br> J & H Painting provides premium interior and<br> exterior painting services across Florida.</p>
+                        <div class="custom-btn-group">
+                            <a href="#section_2" class="btn custom-btn smoothscroll me-3" style="background-color: #6d16df; border-color: #6d16df; color: white;">GET A FREE QUOTE</a>
+                            <a href="#section_3" class="link smoothscroll" style="color: #0dbbc9;">CALL NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2;">
+                <path fill="#6d16df" fill-opacity="1" d="M0,140L34.3,120C68.6,100,137,60,206,56.6C274.3,53.2,343,86.5,411,90C480,93.5,549,66.5,617,76.5C685.7,86.5,754,133,823,150C891.4,167,960,153,1029,140C1097.1,127,1166,113,1234,100C1302.9,87,1371,73,1406,66.5L1440,60L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            </svg>
+        </section>
 
-<section class="hero-section d-flex justify-content-center align-items-center" id="section_1" style="background-image: url('images/bg-7.png'); background-size: cover; background-position: top ; background-repeat: no-repeat; position: relative;">
-
-    <div class="section-overlay" style="background-color: #000 !important; opacity: 0;"></div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2;">
-        <path fill="#6d16df" fill-opacity="1"
-            d="M0,156L34.3,134.5C68.6,113,137,84.5,206,79.8C274.3,75,343,96.5,411,100.5C480,104.5,549,74.5,617,85.5C685.7,96.5,754,149,823,167C891.4,185,960,170,1029,156C1097.1,142,1166,126.5,1234,112C1302.9,97.5,1371,82,1406,74.8L1440,67.5L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-        </path>
-    </svg>
-
-    <div class="container" style="position: relative; z-index: 3;">
-        <div class="row">
-            <div class="col-lg-12 col-12 text-start">
-                <h2 class="text-white">J & H Painting</h2>
-
-                <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                    <span class="cd-words-wrapper d-block text-start" style="width: 100%;">
-                        <b class="is-visible"
-                            style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">with
-                            Expert Painting Services</b>
-                        <b
-                            style="color: #6dbedf !important; display: inline-block; width: 100%; text-align: left;">Professional</b>
-                        <b
-                            style="color: #6d16df !important; display: inline-block; width: 100%; text-align: left;">Reliable</b>
-                        <b
-                            style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">Beautiful</b>
-                    </span>
-                </h1>
-
-                <p class="text-white mb-4" style="max-width: 800px;">From color consultation to flawless
-                    finishes, J & H Painting provides<br> premium interior and exterior painting services across
-                    Florida.</p>
-
-                <div class="custom-btn-group">
-                    <a href="#section_2" class="btn custom-btn smoothscroll me-3"
-                        style="background-color: #6d16df; border-color: #6d16df; color: white;">GET A FREE
-                        QUOTE</a>
-                    <a href="#section_3" class="link smoothscroll" style="color: #0dbbc9;">CALL NOW</a>
+        <!-- About Section -->
+        <section class="about-section section-padding" id="section_2" style="padding: 120px 0 !important;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-12 text-center">
+                <h2 class="mb-lg-5 mb-4" style="color: #322e2f;">About J & H Painting</h2>
+            </div>
+            
+            <!-- Left side - Text content -->
+            <div class="col-lg-6 col-12 me-auto mb-4 mb-lg-0">
+                <h3 class="mb-3" style="color: #322e2f;">Your Trusted Painting Experts in Florida</h3>
+                <p style="color: #322e2f;"><strong style="color: #322e2f;">At J & H Painting</strong>, we take pride in delivering precision and quality in every job. With years of experience, our team provides top-tier residential and commercial painting services across Florida.</p>
+                <p style="color: #322e2f;">We focus on preparation, premium materials, clean workmanship, and exceptional customer service. Whether you're refreshing a single room or repainting an entire property, we treat every space with respect and deliver results that last.</p>
+            </div>
+            
+            <!-- Right side - Mike's image centered -->
+            <div class="col-lg-5 col-12 offset-lg-1 text-center">
+                <div class="member-block d-inline-block" style="max-width: 320px; margin: 0 auto;">
+                    <div class="member-block-image-wrap">
+    <img src="images/mike.jpeg" 
+         class="member-block-image img-fluid" 
+         alt="Mike - Founder"
+         style="width: 100%; height: auto; border-radius: 0;">
+    <ul class="social-icon" style="justify-content: center; position: absolute; bottom: 10px; left: 0; right: 0;">
+        <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter" style="color: #6d16df; background-color: white; border-radius: 50%; padding: 8px;"></a></li>
+        <li class="social-icon-item"><a href="#" class="social-icon-link bi-whatsapp" style="color: #6d16df; background-color: white; border-radius: 50%; padding: 8px;"></a></li>
+    </ul>
+</div>
+                    <div class="member-block-info text-center mt-3">
+                        <h4 style="color: #322e2f; font-size: 1.5rem;">Mike</h4>
+                        <p style="color: #322e2f; font-size: 1rem;">Founder & Lead Painter</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Bottom Curve - Height 150 -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2;">
-        <path fill="#0dbbc9" fill-opacity="1"
-            d="M0,140L34.3,120C68.6,100,137,60,206,56.6C274.3,53.2,343,86.5,411,90C480,93.5,549,66.5,617,76.5C685.7,86.5,754,133,823,150C891.4,167,960,153,1029,140C1097.1,127,1166,113,1234,100C1302.9,87,1371,73,1406,66.5L1440,60L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-        </path>
-    </svg>
 </section>
 
-
-        <section class="about-section section-padding" id="section_2" style="padding: 120px 0 !important;">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center">
-                        <h2 class="mb-lg-5 mb-4" style="color: #322e2f;">About J & H Painting</h2>
-                    </div>
-
-                    <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
-                        <h3 class="mb-3" style="color: #322e2f;">Your Trusted Painting Experts in Florida</h3>
-
-                        <p style="color: #322e2f;"><strong style="color: #322e2f;">At J & H Painting</strong>, we take
-                            pride in delivering precision and quality in every job. With years of experience, our team
-                            provides top-tier residential and commercial painting services across Florida.</p>
-
-                        <p style="color: #322e2f;">We focus on preparation, premium materials, clean workmanship, and
-                            exceptional customer service. Whether you're refreshing a single room or repainting an
-                            entire property, we treat every space with respect and deliver results that last.</p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                        <div class="member-block">
-                            <div class="member-block-image-wrap">
-                                <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg"
-                                    class="member-block-image img-fluid" alt="James - Founder">
-
-                                <ul class="social-icon">
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-twitter" style="color: #6d16df;"></a>
-                                    </li>
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-whatsapp" style="color: #6d16df;"></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="member-block-info d-flex align-items-center">
-                                <h4 style="color: #322e2f;">James</h4>
-                                <p class="ms-auto" style="color: #322e2f;">Founder</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="member-block">
-                            <div class="member-block-image-wrap">
-                                <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg"
-                                    class="member-block-image img-fluid" alt="Helen - Co-Founder">
-
-                                <ul class="social-icon">
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-linkedin" style="color: #6d16df;"></a>
-                                    </li>
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-twitter" style="color: #6d16df;"></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="member-block-info d-flex align-items-center">
-                                <h4 style="color: #322e2f;">Helen</h4>
-                                <p class="ms-auto" style="color: #322e2f;">Co-Founder</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section-bg-image"
-            style="background-image: url('images/bg5.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Newsletter Section -->
+        <section class="section-bg-image" style="background-image: url('images/bg5.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path fill="#0dbbc9" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
-                    stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
-                    stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z"
-                    stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
-                    stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
             </svg>
-
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-6 col-12">
                         <div class="section-bg-image-block">
                             <h2 class="mb-lg-3" style="color: #322e2f;">Get our newsletter</h2>
-
                             <p style="color: #322e2f;">Stay updated with our latest projects, painting tips, and special offers!</p>
-
                             <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                 <div class="input-group input-group-lg">
-                                    <span class="input-group-text bi-envelope" id="basic-addon1"
-                                        style="background-color: #6d16df; border-color: #6d16df; color: white;"></span>
-
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        class="form-control" placeholder="Email address" required="">
-
-                                    <button type="submit" class="form-control"
-                                        style="background-color: #6d16df; border-color: #6d16df; color: white;">Subscribe</button>
+                                    <span class="input-group-text bi-envelope" id="basic-addon1" style="background-color: #6d16df; border-color: #6d16df; color: white;"></span>
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                    <button type="submit" class="form-control" style="background-color: #6d16df; border-color: #6d16df; color: white;">Subscribe</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-
                 </div>
             </div>
-
             <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path fill="#0dbbc9" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
-                    stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
-                    stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z"
-                    stroke-width="0"></path>
-                <path fill="#0dbbc9" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
-                    stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="#0dbbc9" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
             </svg>
         </section>
 
+        <!-- Services & Benefits Section -->
         <section class="membership-section section-padding" id="section_3">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
-                        <h2><span style="color: #322e2f;">Why Choose</span> <span style="color: #322e2f;">J & H
-                                Painting</span></h2>
+                        <h2><span style="color: #322e2f;">Why Choose</span> <span style="color: #322e2f;">J & H Painting</span></h2>
                         <p class="mt-3 fs-5" style="color: #322e2f;">Professional Craftsmanship You Can Count On</p>
                     </div>
-
                     <div class="col-lg-6 col-12 mb-3 mb-lg-0">
                         <h4 class="mb-4 pb-lg-2" style="color: #322e2f;">Our Services & Benefits</h4>
-
                         <div class="table-responsive">
                             <table class="table text-center">
                                 <thead>
@@ -348,138 +257,71 @@
                                         <th style="width: 20%; color: white !important;">Both</th>
                                     </tr>
                                 </thead>
-
                                 <tbody>
-                                    <tr>
-                                        <th scope="row" class="text-start" style="color: #322e2f;">Experienced Painters
-                                        </th>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row" class="text-start" style="color: #322e2f;">High-Quality
-                                            Materials</th>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row" class="text-start" style="color: #322e2f;">Clean & Respectful
-                                            Service</th>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row" class="text-start" style="color: #322e2f;">Satisfaction
-                                            Guaranteed</th>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row" class="text-start" style="color: #322e2f;">Color Consultation
-                                        </th>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row" class="text-start" style="color: #322e2f;">Free Estimate</th>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                        <td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td>
-                                    </tr>
+                                    <tr><th scope="row" class="text-start" style="color: #322e2f;">Experienced Painters</th><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td></tr>
+                                    <tr><th scope="row" class="text-start" style="color: #322e2f;">High-Quality Materials</th><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td></tr>
+                                    <tr><th scope="row" class="text-start" style="color: #322e2f;">Clean & Respectful Service</th><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td></tr>
+                                    <tr><th scope="row" class="text-start" style="color: #322e2f;">Satisfaction Guaranteed</th><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td></tr>
+                                    <tr><th scope="row" class="text-start" style="color: #322e2f;">Color Consultation</th><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td></tr>
+                                    <tr><th scope="row" class="text-start" style="color: #322e2f;">Free Estimate</th><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td><td><i class="bi-check-circle-fill" style="color: #6dbedf;"></i></td></tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-
                     <div class="col-lg-5 col-12 mx-auto">
                         <h4 class="mb-4 pb-lg-2" style="color: #322e2f;">Get a free quote</h4>
-                        <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form"
-                            style="background-color: #6d16df !important;">
+                        <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form" style="background-color: #6d16df !important;">
                             <h4 class="mb-4" style="color: white !important;">Request a Callback</h4>
-
                             <div class="form-floating">
-                                <input type="text" name="full-name" id="full-name" class="form-control"
-                                    placeholder="Full Name" required="">
+                                <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
                                 <label for="floatingInput" style="color: #322e2f;">Full Name</label>
                             </div>
-
                             <div class="form-floating">
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                    placeholder="Email address" required="">
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
                                 <label for="floatingInput" style="color: #322e2f;">Email address</label>
                             </div>
-
                             <div class="form-floating">
-                                <input type="tel" name="phone" id="phone" class="form-control"
-                                    placeholder="Phone Number">
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number">
                                 <label for="floatingInput" style="color: #322e2f;">Phone Number</label>
                             </div>
-
                             <div class="form-floating">
-                                <textarea class="form-control" id="message" name="message"
-                                    placeholder="Tell us about your project"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Tell us about your project"></textarea>
                                 <label for="floatingTextarea" style="color: #322e2f;">Project Details</label>
                             </div>
-
-                            <button type="submit" class="form-control"
-                                style="background-color: white; border-color: white; color: #6d16df !important; font-weight: bold;">Get
-                                Free Quote</button>
+                            <button type="submit" class="form-control" style="background-color: white; border-color: white; color: #6d16df !important; font-weight: bold;">Get Free Quote</button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
 
-
+        <!-- Our Services Section (Cards) -->
         <section class="events-section section-bg section-padding" id="section_4">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-12 col-12">
                         <h2 class="mb-lg-3" style="color: #322e2f;">Our Services</h2>
-                        <p class="mb-5" style="color: #322e2f;">Comprehensive Painting Solutions for Your Home &
-                            Business</p>
+                        <p class="mb-5" style="color: #322e2f;">Comprehensive Painting Solutions for Your Home & Business</p>
                     </div>
 
                     <!-- Interior Painting -->
                     <div class="row custom-block mb-3">
                         <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
-                            <div
-                                class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                 <i class="bi bi-house-door fs-1 mb-lg-2" style="color: #322e2f;"></i>
-                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">
-                                    01</h6>
+                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">01</h6>
                                 <strong style="color: #322e2f;">Interior</strong>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                             <div class="custom-block-image-wrap">
-                                <a href="#">
-                                    <img src="images/interior paintings.jpg" class="custom-block-image img-fluid"
-                                        alt="Interior Painting">
-                                    <i class="custom-block-icon bi-brush" style="background-color: #6dbedf;"></i>
-                                </a>
+                                <a href="#"><img src="images/interior paintings.jpg" class="custom-block-image img-fluid" alt="Interior Painting"><i class="custom-block-icon bi-brush" style="background-color: #6dbedf;"></i></a>
                             </div>
                         </div>
-
                         <div class="col-lg-6 col-12 order-3 order-lg-0">
                             <div class="custom-block-info mt-2 mt-lg-0">
                                 <a href="#" class="events-title mb-3" style="color: #322e2f;">Interior Painting</a>
-                                <p class="mb-0" style="color: #322e2f;">Refresh walls, ceilings, trim, and cabinets with
-                                    perfect color and smooth finishes. We protect your furniture and leave every room
-                                    spotless.</p>
+                                <p class="mb-0" style="color: #322e2f;">Refresh walls, ceilings, trim, and cabinets with perfect color and smooth finishes. We protect your furniture and leave every room spotless.</p>
                             </div>
                         </div>
                     </div>
@@ -487,30 +329,21 @@
                     <!-- Exterior Painting -->
                     <div class="row custom-block custom-block-bg mb-3">
                         <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
-                            <div
-                                class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                 <i class="bi bi-tree fs-1 mb-lg-2" style="color: #322e2f;"></i>
-                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">
-                                    02</h6>
+                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">02</h6>
                                 <strong style="color: #322e2f;">Exterior</strong>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                             <div class="custom-block-image-wrap">
-                                <a href="#">
-                                    <img src="images/exterior.jpg" class="custom-block-image img-fluid"
-                                        alt="Exterior Painting">
-                                    <i class="custom-block-icon bi-building" style="background-color: #6dbedf;"></i>
-                                </a>
+                                <a href="#"><img src="images/exterior.jpg" class="custom-block-image img-fluid" alt="Exterior Painting"><i class="custom-block-icon bi-building" style="background-color: #6dbedf;"></i></a>
                             </div>
                         </div>
-
                         <div class="col-lg-6 col-12 order-3 order-lg-0">
                             <div class="custom-block-info mt-2 mt-lg-0">
                                 <a href="#" class="events-title mb-3" style="color: #322e2f;">Exterior Painting</a>
-                                <p class="mb-0" style="color: #322e2f;">Enhance curb appeal and protect surfaces with
-                                    durable exterior paint. We handle siding, trim, doors, shutters, and more.</p>
+                                <p class="mb-0" style="color: #322e2f;">Enhance curb appeal and protect surfaces with durable exterior paint. We handle siding, trim, doors, shutters, and more.</p>
                             </div>
                         </div>
                     </div>
@@ -518,30 +351,21 @@
                     <!-- Residential Painting -->
                     <div class="row custom-block mb-3">
                         <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
-                            <div
-                                class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                 <i class="bi bi-house-heart fs-1 mb-lg-2" style="color: #322e2f;"></i>
-                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">
-                                    03</h6>
+                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">03</h6>
                                 <strong style="color: #322e2f;">Residential</strong>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                             <div class="custom-block-image-wrap">
-                                <a href="#">
-                                    <img src="images/residential.jpg" class="custom-block-image img-fluid"
-                                        alt="Residential Painting">
-                                    <i class="custom-block-icon bi-home" style="background-color: #6dbedf;"></i>
-                                </a>
+                                <a href="#"><img src="images/residential.jpg" class="custom-block-image img-fluid" alt="Residential Painting"><i class="custom-block-icon bi-home" style="background-color: #6dbedf;"></i></a>
                             </div>
                         </div>
-
                         <div class="col-lg-6 col-12 order-3 order-lg-0">
                             <div class="custom-block-info mt-2 mt-lg-0">
                                 <a href="#" class="events-title mb-3" style="color: #322e2f;">Residential Painting</a>
-                                <p class="mb-0" style="color: #322e2f;">Personalized solutions for homes of every size
-                                    and style. From single rooms to whole-house transformations.</p>
+                                <p class="mb-0" style="color: #322e2f;">Personalized solutions for homes of every size and style. From single rooms to whole-house transformations.</p>
                             </div>
                         </div>
                     </div>
@@ -549,30 +373,21 @@
                     <!-- Commercial Painting -->
                     <div class="row custom-block custom-block-bg mb-3">
                         <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
-                            <div
-                                class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                 <i class="bi bi-building fs-1 mb-lg-2" style="color: #322e2f;"></i>
-                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">
-                                    04</h6>
+                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">04</h6>
                                 <strong style="color: #322e2f;">Commercial</strong>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                             <div class="custom-block-image-wrap">
-                                <a href="#">
-                                    <img src="images/commercial.jpg" class="custom-block-image img-fluid"
-                                        alt="Commercial Painting">
-                                    <i class="custom-block-icon bi-briefcase" style="background-color: #6dbedf;"></i>
-                                </a>
+                                <a href="#"><img src="images/commercial.jpg" class="custom-block-image img-fluid" alt="Commercial Painting"><i class="custom-block-icon bi-briefcase" style="background-color: #6dbedf;"></i></a>
                             </div>
                         </div>
-
                         <div class="col-lg-6 col-12 order-3 order-lg-0">
                             <div class="custom-block-info mt-2 mt-lg-0">
                                 <a href="#" class="events-title mb-3" style="color: #322e2f;">Commercial Painting</a>
-                                <p class="mb-0" style="color: #322e2f;">Professional, efficient painting for offices,
-                                    retail spaces, and commercial buildings. Minimal disruption, maximum results.</p>
+                                <p class="mb-0" style="color: #322e2f;">Professional, efficient painting for offices, retail spaces, and commercial buildings. Minimal disruption, maximum results.</p>
                             </div>
                         </div>
                     </div>
@@ -580,173 +395,371 @@
                     <!-- Additional Services -->
                     <div class="row custom-block mb-4">
                         <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
-                            <div
-                                class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                 <i class="bi bi-tools fs-1 mb-lg-2" style="color: #322e2f;"></i>
-                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">
-                                    05</h6>
+                                <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" style="color: #322e2f;">05</h6>
                                 <strong style="color: #322e2f;">Extras</strong>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                             <div class="custom-block-image-wrap">
-                                <a href="#">
-                                    <img src="images/additional services.jfif" class="custom-block-image img-fluid"
-                                        alt="Additional Services">
-                                    <i class="custom-block-icon bi-plus-circle" style="background-color: #6dbedf;"></i>
-                                </a>
+                                <a href="#"><img src="images/additional services.jfif" class="custom-block-image img-fluid" alt="Additional Services"><i class="custom-block-icon bi-plus-circle" style="background-color: #6dbedf;"></i></a>
                             </div>
                         </div>
-
                         <div class="col-lg-6 col-12 order-3 order-lg-0">
                             <div class="custom-block-info mt-2 mt-lg-0">
                                 <a href="#" class="events-title mb-3" style="color: #322e2f;">Additional Services</a>
-                                <p class="mb-0" style="color: #322e2f;">We also offer drywall repair, pressure washing,
-                                    deck & fence staining, and detailed surface preparation.</p>
+                                <p class="mb-0" style="color: #322e2f;">We also offer drywall repair, pressure washing, deck & fence staining, and detailed surface preparation.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Gallery / Featured Projects Section -->
+                    <!-- Gallery / Featured Projects Section with Slider -->
                     <div class="col-lg-12 col-12 mt-5">
                         <div class="text-center mb-5">
                             <h2 class="mb-3" style="color: #322e2f;">Gallery / Featured Projects</h2>
                             <p class="fs-5" style="color: #322e2f;">See Our Work in Action</p>
-                            <p class="mt-3" style="color: #322e2f;">Explore our gallery to see stunning before & after
-                                transformations from real J & H Painting projects.<br>Professional results. Real
-                                clients. Beautiful spaces.</p>
+                            <p class="mt-3" style="color: #322e2f;">Explore our gallery to see stunning before & after transformations from real J & H Painting projects.<br>Professional results. Real clients. Beautiful spaces.</p>
                         </div>
 
-    <!-- Bootstrap Carousel - Infinite Auto Slide -->
-<div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
-    
-    <!-- Carousel inner -->
-    <div class="carousel-inner rounded-4 shadow">
-        <!-- First slide - 3 images -->
-        <div class="carousel-item active">
-            <div class="row g-3 p-3">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
-                        <img src="images/wallmart.webp" class="img-fluid w-100" alt="Walmart" style="height: 250px; object-fit: cover;">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
-                            <h4 class="mb-0 fw-bold text-white">Walmart</h4>
-                            <p class="mb-0 small text-white opacity-75">Commercial Painting</p>
+                        <!-- Bootstrap Carousel - Infinite Auto Slide -->
+                        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+                            <div class="carousel-inner rounded-4 shadow">
+                                <!-- First slide - 3 images -->
+                                <div class="carousel-item active">
+                                    <div class="row g-3 p-3">
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                                                <img src="images/wallmart.webp" class="img-fluid w-100" alt="Walmart" style="height: 250px; object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                                    <h4 class="mb-0 fw-bold text-white">Walmart</h4>
+                                                    <p class="mb-0 small text-white opacity-75">Commercial Painting</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                                                <img src="images/Taco Bell.jpg" class="img-fluid w-100" alt="Taco Bell" style="height: 250px; object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                                    <h4 class="mb-0 fw-bold text-white">Taco Bell</h4>
+                                                    <p class="mb-0 small text-white opacity-75">Store Renovation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                                                <img src="images/Skechers.jpg" class="img-fluid w-100" alt="Skechers" style="height: 250px; object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                                    <h4 class="mb-0 fw-bold text-white">Skechers</h4>
+                                                    <p class="mb-0 small text-white opacity-75">Store Exterior</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Second slide - 3 images -->
+                                <div class="carousel-item">
+                                    <div class="row g-3 p-3">
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                                                <img src="images/shack shake.jpg" class="img-fluid w-100" alt="Shack Shake" style="height: 250px; object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                                    <h4 class="mb-0 fw-bold text-white">Shack Shake</h4>
+                                                    <p class="mb-0 small text-white opacity-75">Interior & Exterior</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                                                <img src="images/publix supermarket.jpg" class="img-fluid w-100" alt="Publix Supermarket" style="height: 250px; object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                                    <h4 class="mb-0 fw-bold text-white">Publix Supermarket</h4>
+                                                    <p class="mb-0 small text-white opacity-75">Interior Refresh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                                                <img src="images/gorjana.jpg" class="img-fluid w-100" alt="Gorjana" style="height: 250px; object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                                    <h4 class="mb-0 fw-bold text-white">Gorjana</h4>
+                                                    <p class="mb-0 small text-white opacity-75">Boutique Painting</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
-                        <img src="images/Taco Bell.jpg" class="img-fluid w-100" alt="Taco Bell" style="height: 250px; object-fit: cover;">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
-                            <h4 class="mb-0 fw-bold text-white">Taco Bell</h4>
-                            <p class="mb-0 small text-white opacity-75">Store Renovation</p>
+
+                        <!-- View Full Gallery Button -->
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn custom-btn" style="background-color: #6d16df; border-color: #6d16df; color: white;">View Full Gallery</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
-                        <img src="images/Skechers.jpg" class="img-fluid w-100" alt="Skechers" style="height: 250px; object-fit: cover;">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
-                            <h4 class="mb-0 fw-bold text-white">Skechers</h4>
-                            <p class="mb-0 small text-white opacity-75">Store Exterior</p>
-                        </div>
-                    </div>
+
+                     <!-- ============================================= -->
+<!-- More Featured Projects Section with Load More -->
+<!-- ============================================= -->
+<div class="col-lg-12 col-12 mt-5 pt-4">
+    <div class="text-center mb-5">
+        <h2 class="mb-3" style="color: #322e2f;">More Featured Projects</h2>
+        <p class="fs-5" style="color: #322e2f;">Explore Our Complete Portfolio</p>
+        <p class="mt-3" style="color: #322e2f;">Browse through our extensive collection of recent painting projects.<br>Professional results. Real clients. Beautiful spaces.</p>
+    </div>
+
+    <!-- Projects Grid - Initially 2 rows (8 images) -->
+    <div class="row g-4" id="initialProjects">
+        <!-- Row 1 - 4 images -->
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (1).jpeg" class="img-fluid w-100" alt="Project 1" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
                 </div>
             </div>
         </div>
-        
-        <!-- Second slide - 3 images -->
-        <div class="carousel-item">
-            <div class="row g-3 p-3">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
-                        <img src="images/shack shake.jpg" class="img-fluid w-100" alt="Shack Shake" style="height: 250px; object-fit: cover;">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
-                            <h4 class="mb-0 fw-bold text-white">Shack Shake</h4>
-                            <p class="mb-0 small text-white opacity-75">Interior & Exterior</p>
-                        </div>
-                    </div>
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (2).jpeg" class="img-fluid w-100" alt="Project 2" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
-                        <img src="images/publix supermarket.jpg" class="img-fluid w-100" alt="Publix Supermarket" style="height: 250px; object-fit: cover;">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
-                            <h4 class="mb-0 fw-bold text-white">Publix Supermarket</h4>
-                            <p class="mb-0 small text-white opacity-75">Interior Refresh</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (3).jpeg" class="img-fluid w-100" alt="Project 3" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
-                        <img src="images/gorjana.jpg" class="img-fluid w-100" alt="Gorjana" style="height: 250px; object-fit: cover;">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
-                            <h4 class="mb-0 fw-bold text-white">Gorjana</h4>
-                            <p class="mb-0 small text-white opacity-75">Boutique Painting</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (4).jpeg" class="img-fluid w-100" alt="Project 4" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 - 4 images -->
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM.jpeg" class="img-fluid w-100" alt="Project 5" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.03 PM (1).jpeg" class="img-fluid w-100" alt="Project 6" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.03 PM (2).jpeg" class="img-fluid w-100" alt="Project 7" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 gallery-item">
+            <div class="custom-block-image-wrap rounded-3 overflow-hidden position-relative">
+                <img src="images/WhatsApp Image 2026-02-19 at 9.45.03 PM.jpeg" class="img-fluid w-100" alt="Project 8" style="height: 220px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-2 text-white small" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- Indicators (optional) -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    <!-- Load More Button -->
+    <div class="text-center mt-5">
+        <button type="button" class="btn custom-btn px-5 py-3" data-bs-toggle="modal" data-bs-target="#projectsModal" style="background-color: #6d16df; border-color: #6d16df; color: white; font-weight: 600;">
+            View All Projects
+        </button>
     </div>
 </div>
 
-<!-- JavaScript for Continuous Slide -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var myCarousel = document.getElementById('clientCarousel');
-        if (myCarousel) {
-            // Remove any existing Bootstrap carousel instance
-            var existingInstance = bootstrap.Carousel.getInstance(myCarousel);
-            if (existingInstance) {
-                existingInstance.dispose();
-            }
-            
-            // Create new instance with proper settings
-            var carousel = new bootstrap.Carousel(myCarousel, {
-                interval: 3000,      // 3 seconds
-                wrap: true,           // infinite loop
-                pause: false,         // no pause on hover
-                ride: 'carousel'      // auto start
-            });
-            
-            // Extra insurance for continuous sliding
-            setInterval(function() {
-                if (!myCarousel.matches(':hover')) {
-                    // Do nothing - carousel already sliding
-                }
-            }, 100);
-        }
-    });
-</script>
-                        <div class="text-center mt-4">
-                            <a href="#" class="btn custom-btn"
-                                style="background-color: #6d16df; border-color: #6d16df; color: white;">View Full
-                                Gallery</a>
+<!-- ============================================= -->
+<!-- Modal Popup for All Projects -->
+<!-- ============================================= -->
+<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content" style="background-color: #f8f9fa;">
+            <div class="modal-header" style="background-color: #6d16df; color: white;">
+                <h5 class="modal-title" id="projectsModalLabel">Complete Project Gallery</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row g-4">
+                    <!-- All 28 Images - Without Labels -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (1).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
                         </div>
                     </div>
-
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (2).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (3).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM (4).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.02 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.03 PM (1).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.03 PM (2).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.03 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.04 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.05 PM (1).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.05 PM (2).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.05 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.06 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.07 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.08 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.12 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.13 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.14 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.17 PM (1).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.17 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.19 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.20 PM (1).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.20 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.21 PM (1).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.21 PM (2).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.21 PM (3).jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.21 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="custom-block-image-wrap rounded-3 overflow-hidden">
+                            <img src="images/WhatsApp Image 2026-02-19 at 9.45.22 PM.jpeg" class="img-fluid w-100" alt="Project" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" style="background-color: #6d16df; color: white;" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- Contact Section -->
         <section class="contact-section section-padding" id="section_5">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-5 col-12">
                         <form action="#" method="post" class="custom-form contact-form" role="form">
                             <h2 class="mb-4 pb-2">Get in Touch</h2>
                             <h4 class="mb-3">Ready to Transform Your Property?</h4>
                             <p class="mb-4">Get a free estimate or talk to our team today!</p>
-
                             <div class="row">
                                 <div class="col-lg-12 col-12 mb-3">
                                     <div class="d-flex align-items-center">
@@ -761,250 +774,154 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row mt-4">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating">
-                                        <input type="text" name="full-name" id="full-name" class="form-control"
-                                            placeholder="Full Name" required="">
+                                        <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
                                         <label for="floatingInput">Full Name</label>
                                     </div>
                                 </div>
-
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating">
-                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                            class="form-control" placeholder="Email address" required="">
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
                                         <label for="floatingInput">Email address</label>
                                     </div>
                                 </div>
-
                                 <div class="col-lg-12 col-12">
                                     <div class="form-floating">
-                                        <input type="tel" name="phone" id="phone" class="form-control"
-                                            placeholder="Phone Number">
+                                        <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number">
                                         <label for="floatingInput">Phone Number</label>
                                     </div>
                                 </div>
-
                                 <div class="col-lg-12 col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Message"
-                                            style="height: 120px;"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message" style="height: 120px;"></textarea>
                                         <label for="floatingTextarea">Message</label>
                                     </div>
-
-<button type="submit" class="form-control" style="background-color: #6d16df; border-color: #6d16df; color: white; font-weight: bold;">REQUEST A FREE QUOTE</button>                                </div>
+                                    <button type="submit" class="form-control" style="background-color: #6d16df; border-color: #6d16df; color: white; font-weight: bold;">REQUEST A FREE QUOTE</button>
+                                </div>
                             </div>
                         </form>
                     </div>
-
                     <div class="col-lg-6 col-12">
-                        <div class="contact-info mt-5"
-                            style="background-color: #6d16df !important; padding: 30px; border-radius: 20px;">
+                        <div class="contact-info mt-5" style="background-color: #6d16df !important; padding: 30px; border-radius: 20px;">
                             <div class="contact-info-item">
                                 <div class="contact-info-body">
                                     <strong class="fs-4" style="color: white !important;">J & H Painting</strong>
-                                    <p class="mt-2 mb-2" style="color: white !important;">We'd love to hear from you!
-                                        Whether you have a question, want pricing info, or want to book a service, send
-                                        us a message below.</p>
-                                    <p class="fst-italic mb-3" style="color: white !important;"> We'll respond quickly
-                                        and help you find the best solution.</p>
-
+                                    <p class="mt-2 mb-2" style="color: white !important;">We'd love to hear from you! Whether you have a question, want pricing info, or want to book a service, send us a message below.</p>
+                                    <p class="fst-italic mb-3" style="color: white !important;">We'll respond quickly and help you find the best solution.</p>
                                     <p class="mt-4 mb-1">
-                                        <a href="tel: 010-020-0340" class="contact-link"
-                                            style="color: white !important;">
-                                            Serving homeowners & businesses throughout Florida
-                                        </a>
+                                        <a href="tel: 010-020-0340" class="contact-link" style="color: white !important;">Serving homeowners & businesses throughout Florida</a>
                                     </p>
                                 </div>
                             </div>
-
                             <img src="images/WorldMap.svg" class="img-fluid mt-4" alt="Florida Map">
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-    <!-- 
-  =====================================================
-  INSTRUCTIONS: 
-  1. Apni index.html ke <head> mein yeh CSS paste karein
-  2. Phir purana <footer> tag dhundh kar is nayi footer se replace karein
-  =====================================================
--->
+        <!-- Footer -->
+        <footer class="site-footer" style="margin-top: 0; padding-top: 0; margin-bottom: 0 !important; padding-bottom: 0 !important; position: relative; overflow: hidden;">
+            <!-- TOP WAVES -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1; display: block;">
+                <path fill="#6d16df" fill-opacity="0.12" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2; display: block;">
+                <path fill="#0dbbc9" fill-opacity="1" d="M0,40L34.3,34.7C68.6,29,137,19,206,21.3C274.3,24,343,40,411,42.7C480,45,549,35,617,29.3C685.7,24,754,24,823,29.3C891.4,35,960,45,1029,45.3C1097.1,45,1166,35,1234,29.3C1302.9,24,1371,24,1406,24L1440,24L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 3; display: block;">
+                <path fill="#6d16df" fill-opacity="1" d="M0,0L34.3,5.3C68.6,11,137,21,206,18.7C274.3,16,343,0,411,0C480,0,549,16,617,18.7C685.7,21,754,11,823,5.3C891.4,0,960,0,1029,5.3C1097.1,11,1166,21,1234,18.7C1302.9,16,1371,5,1406,2.7L1440,0L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+            </svg>
 
-<!-- STEP 1: Yeh <style> tag apni index.html ke </head> se pehle add karein -->
-<style>
-  html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden;
-  }
-  body {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  main {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  /* Footer ke baad koi extra space nahi */
-  .site-footer {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  .site-footer > div:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-</style>
+            <!-- FOOTER CONTENT -->
+            <div class="container" style="position: relative; z-index: 5; padding-top: 65px;">
+                <div class="row">
+                    <div class="col-lg-4 col-12 me-auto mb-5 mb-lg-0 text-center text-lg-start">
+                        <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start" href="index.html">
+                            <img src="images/logo.png" class="navbar-brand-image img-fluid me-2" alt="J & H Painting" style="max-width: 50px;">
+                            <span class="navbar-brand-text" style="color: #322e2f;">
+                                J & H Painting
+                                <small class="d-block" style="color: #322e2f; font-size: 14px;">Florida's Trusted Painters</small>
+                            </span>
+                        </a>
+                        <p class="mt-3" style="color: #322e2f; line-height: 1.6;">Serving homeowners & businesses throughout Florida with premium painting services.</p>
+                        <div class="d-flex justify-content-center justify-content-lg-start mt-3">
+                            <span class="badge me-2 px-3 py-2" style="background-color: #0dbbc9; color: white; font-weight: 500;">Licensed</span>
+                            <span class="badge me-2 px-3 py-2" style="background-color: #0dbbc9; color: white; font-weight: 500;">Insured</span>
+                            <span class="badge px-3 py-2" style="background-color: #0dbbc9; color: white; font-weight: 500;">Since 2005</span>
+                        </div>
+                    </div>
 
-<!-- STEP 2: Yeh poora footer apne purane footer se replace karein -->
-<footer class="site-footer" style="margin-top: 0; padding-top: 0; margin-bottom: 0 !important; padding-bottom: 0 !important; position: relative; overflow: hidden;">
+                    <div class="col-lg-4 col-12 text-center text-lg-start mb-5 mb-lg-0">
+                        <h5 class="site-footer-title mb-4" style="color: #322e2f; font-weight: 600;">Contact Us</h5>
+                        <div class="d-flex flex-column align-items-center align-items-lg-start w-100">
+                            <p class="d-flex mb-3 justify-content-center justify-content-lg-start w-100" style="color: #322e2f;">
+                                <span class="me-3 fs-5" style="color: #6d16df;"></span>
+                                <span style="color: #322e2f; font-weight: 500;">(123) 456-7890</span>
+                            </p>
+                            <p class="d-flex mb-3 justify-content-center justify-content-lg-start w-100" style="color: #322e2f;">
+                                <span class="me-3 fs-5" style="color: #6d16df;">✉️</span>
+                                <span style="color: #322e2f;">contact@jhpaintingfl.com</span>
+                            </p>
+                            <p class="d-flex justify-content-center justify-content-lg-start w-100" style="color: #322e2f;">
+                                <span class="me-3 fs-5" style="color: #6d16df;"></span>
+                                <span style="color: #322e2f;">Florida, USA</span>
+                            </p>
+                        </div>
+                    </div>
 
-    <!-- ✅ TOP WAVE 1 - Blue semi-transparent (peeche wali layer) -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" 
-         style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1; display: block;">
-        <path fill="#6d16df" fill-opacity="0.12"
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-        </path>
-    </svg>
-
-    <!-- ✅ TOP WAVE 2 - Yellow accent curve (hero bottom wave jaise) -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" 
-         style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2; display: block;">
-        <path fill="#0dbbc9" fill-opacity="1"
-            d="M0,40L34.3,34.7C68.6,29,137,19,206,21.3C274.3,24,343,40,411,42.7C480,45,549,35,617,29.3C685.7,24,754,24,823,29.3C891.4,35,960,45,1029,45.3C1097.1,45,1166,35,1234,29.3C1302.9,24,1371,24,1406,24L1440,24L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-        </path>
-    </svg>
-
-    <!-- ✅ TOP WAVE 3 - Blue solid thin line (upar se blue peek karta hua) -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" 
-         style="position: absolute; top: 0; left: 0; width: 100%; z-index: 3; display: block;">
-        <path fill="#6d16df" fill-opacity="1"
-            d="M0,0L34.3,5.3C68.6,11,137,21,206,18.7C274.3,16,343,0,411,0C480,0,549,16,617,18.7C685.7,21,754,11,823,5.3C891.4,0,960,0,1029,5.3C1097.1,11,1166,21,1234,18.7C1302.9,16,1371,5,1406,2.7L1440,0L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-        </path>
-    </svg>
-
-    <!-- ✅ FOOTER CONTENT -->
-    <div class="container" style="position: relative; z-index: 5; padding-top: 65px;">
-        <div class="row">
-
-            <div class="col-lg-4 col-12 me-auto mb-5 mb-lg-0 text-center text-lg-start">
-                <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start"
-                    href="index.html">
-                    <img src="images/logo.png" class="navbar-brand-image img-fluid me-2" alt="J & H Painting" style="max-width: 50px;">
-                    <span class="navbar-brand-text" style="color: #322e2f;">
-                        J & H Painting
-                        <small class="d-block" style="color: #322e2f; font-size: 14px;">Florida's Trusted Painters</small>
-                    </span>
-                </a>
-                <p class="mt-3" style="color: #322e2f; line-height: 1.6;"> Serving homeowners & businesses throughout Florida with premium painting services.</p>
-                
-                <!-- Trust badges -->
-                <div class="d-flex justify-content-center justify-content-lg-start mt-3">
-                    <span class="badge me-2 px-3 py-2" style="background-color: #6d16df; color: white; font-weight: 500;">Licensed</span>
-                    <span class="badge me-2 px-3 py-2" style="background-color: #6d16df; color: white; font-weight: 500;">Insured</span>
-                    <span class="badge px-3 py-2" style="background-color: #0dbbc9; color: #322e2f; font-weight: 500;">Since 2005</span>
+                    <div class="col-lg-3 col-12 ms-auto text-center text-lg-start">
+                        <h5 class="site-footer-title mb-4" style="color: #322e2f; font-weight: 600;">Follow Us</h5>
+                        <ul class="social-icon mb-4 d-flex justify-content-center justify-content-lg-start" style="padding-left: 0; gap: 15px;">
+                            <li class="social-icon-item list-unstyled"><a href="#" class="social-icon-link bi-instagram" style="color: white; background-color: #6d16df; padding: 10px 13px; border-radius: 50%; display: inline-block;"></a></li>
+                            <li class="social-icon-item list-unstyled"><a href="#" class="social-icon-link bi-facebook" style="color: white; background-color: #6d16df; padding: 10px 13px; border-radius: 50%; display: inline-block;"></a></li>
+                            <li class="social-icon-item list-unstyled"><a href="#" class="social-icon-link bi-whatsapp" style="color: white; background-color: #6d16df; padding: 10px 13px; border-radius: 50%; display: inline-block;"></a></li>
+                        </ul>
+                        <div>
+                            <a href="#section_2" class="d-inline-block me-3" style="color: #322e2f; text-decoration: none;">About</a>
+                            <a href="#section_3" class="d-inline-block me-3" style="color: #322e2f; text-decoration: none;">Services</a>
+                            <a href="#section_5" class="d-inline-block" style="color: #322e2f; text-decoration: none;">Contact</a>
+                        </div>
+                    </div>
                 </div>
+                <hr style="border-top: 1px solid rgba(50, 46, 47, 0.2); margin: 30px 0 0;">
             </div>
 
-            <div class="col-lg-4 col-12 text-center text-lg-start mb-5 mb-lg-0">
-                <h5 class="site-footer-title mb-4" style="color: #322e2f; font-weight: 600;">Contact Us</h5>
-
-                <div class="d-flex flex-column align-items-center align-items-lg-start w-100">
-                    <p class="d-flex mb-3 justify-content-center justify-content-lg-start w-100"
-                        style="color: #322e2f;">
-                        <span class="me-3 fs-5" style="color: #6d16df;">📞</span>
-                        <span style="color: #322e2f; font-weight: 500;">(123) 456-7890</span>
-                    </p>
-
-                    <p class="d-flex mb-3 justify-content-center justify-content-lg-start w-100"
-                        style="color: #322e2f;">
-                        <span class="me-3 fs-5" style="color: #6d16df;">✉️</span>
-                        <span style="color: #322e2f;">contact@jhpaintingfl.com</span>
-                    </p>
-                    
-                    <p class="d-flex justify-content-center justify-content-lg-start w-100"
-                        style="color: #322e2f;">
-                        <span class="me-3 fs-5" style="color: #6d16df;">📍</span>
-                        <span style="color: #322e2f;">Florida, USA</span>
-                    </p>
+            <!-- BOTTOM WAVES -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" style="display: block; margin-top: 20px; position: relative; z-index: 4;">
+                <path fill="#6d16df" fill-opacity="1" d="M0,32L34.3,37.3C68.6,43,137,53,206,53.3C274.3,53,343,43,411,37.3C480,32,549,32,617,37.3C685.7,43,754,53,823,53.3C891.4,53,960,43,1029,37.3C1097.1,32,1166,32,1234,37.3C1302.9,43,1371,53,1406,58.7L1440,64L1440,90L1405.7,90C1371.4,90,1303,90,1234,90C1165.7,90,1097,90,1029,90C960,90,891,90,823,90C754.3,90,686,90,617,90C548.6,90,480,90,411,90C342.9,90,274,90,206,90C137.1,90,69,90,34,90L0,90Z"></path>
+            </svg>
+            <div style="background-color: #6d16df; position: relative; z-index: 3; margin-top: -2px; margin-bottom: 0 !important; padding-bottom: 0 !important;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" style="display: block; margin-top: -1px;">
+                    <path fill="#0dbbc9" fill-opacity="0.4" d="M0,0L34.3,5.3C68.6,11,137,21,206,21.3C274.3,21,343,11,411,5.3C480,0,549,0,617,5.3C685.7,11,754,21,823,21.3C891.4,21,960,11,1029,5.3C1097.1,0,1166,0,1234,5.3C1302.9,11,1371,21,1406,26.7L1440,32L1440,40L1405.7,40C1371.4,40,1303,40,1234,40C1165.7,40,1097,40,1029,40C960,40,891,40,823,40C754.3,40,686,40,617,40C548.6,40,480,40,411,40C342.9,40,274,40,206,40C137.1,40,69,40,34,40L0,40Z"></path>
+                </svg>
+                <div class="text-center py-3" style="position: relative; z-index: 5; margin-bottom: 0 !important;">
+                    <p class="small mb-0" style="color: white; opacity: 0.9;">©️ 2026 J & H Painting FL. All Rights Reserved.</p>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-12 ms-auto text-center text-lg-start">
-                <h5 class="site-footer-title mb-4" style="color: #322e2f; font-weight: 600;">Follow Us</h5>
-                
-                <ul class="social-icon mb-4 d-flex justify-content-center justify-content-lg-start" style="padding-left: 0; gap: 15px;">
-                    <li class="social-icon-item list-unstyled">
-                        <a href="#" class="social-icon-link bi-instagram" style="color: white; background-color: #6d16df; padding: 10px 13px; border-radius: 50%; display: inline-block;"></a>
-                    </li>
-                    <li class="social-icon-item list-unstyled">
-                        <a href="#" class="social-icon-link bi-facebook" style="color: white; background-color: #6d16df; padding: 10px 13px; border-radius: 50%; display: inline-block;"></a>
-                    </li>
-                    <li class="social-icon-item list-unstyled">
-                        <a href="#" class="social-icon-link bi-whatsapp" style="color: white; background-color: #6d16df; padding: 10px 13px; border-radius: 50%; display: inline-block;"></a>
-                    </li>
-                </ul>
-                
-                <!-- Quick links -->
-                <div>
-                    <a href="#section_2" class="d-inline-block me-3" style="color: #322e2f; text-decoration: none;">About</a>
-                    <a href="#section_3" class="d-inline-block me-3" style="color: #322e2f; text-decoration: none;">Services</a>
-                    <a href="#section_5" class="d-inline-block" style="color: #322e2f; text-decoration: none;">Contact</a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Copyright line with separator -->
-        <hr style="border-top: 1px solid rgba(50, 46, 47, 0.2); margin: 30px 0 0;">
-        
-    </div><!-- /container -->
-
-    <!-- ✅ BOTTOM WAVE 1 - Blue wave (neeche se nikalta hua) -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" 
-         style="display: block; margin-top: 20px; position: relative; z-index: 4;">
-        <path fill="#6d16df" fill-opacity="1"
-            d="M0,32L34.3,37.3C68.6,43,137,53,206,53.3C274.3,53,343,43,411,37.3C480,32,549,32,617,37.3C685.7,43,754,53,823,53.3C891.4,53,960,43,1029,37.3C1097.1,32,1166,32,1234,37.3C1302.9,43,1371,53,1406,58.7L1440,64L1440,90L1405.7,90C1371.4,90,1303,90,1234,90C1165.7,90,1097,90,1029,90C960,90,891,90,823,90C754.3,90,686,90,617,90C548.6,90,480,90,411,90C342.9,90,274,90,206,90C137.1,90,69,90,34,90L0,90Z">
-        </path>
-    </svg>
-
-    <!-- ✅ BOTTOM WAVE 2 - Yellow accent layer (hero jaise double wave effect) -->
-    <div style="background-color: #6d16df; position: relative; z-index: 3; margin-top: -2px; margin-bottom: 0 !important; padding-bottom: 0 !important;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" style="display: block; margin-top: -1px;">
-            <path fill="#0dbbc9" fill-opacity="0.4"
-                d="M0,0L34.3,5.3C68.6,11,137,21,206,21.3C274.3,21,343,11,411,5.3C480,0,549,0,617,5.3C685.7,11,754,21,823,21.3C891.4,21,960,11,1029,5.3C1097.1,0,1166,0,1234,5.3C1302.9,11,1371,21,1406,26.7L1440,32L1440,40L1405.7,40C1371.4,40,1303,40,1234,40C1165.7,40,1097,40,1029,40C960,40,891,40,823,40C754.3,40,686,40,617,40C548.6,40,480,40,411,40C342.9,40,274,40,206,40C137.1,40,69,40,34,40L0,40Z">
-            </path>
-        </svg>
-
-        <!-- Copyright inside blue bar -->
-        <div class="text-center py-3" style="position: relative; z-index: 5; margin-bottom: 0 !important;">
-            <p class="small mb-0" style="color: white; opacity: 0.9;">©️ 2026 J & H Painting FL. All Rights Reserved.</p>
-        </div>
-    </div>
-
-</footer>
-
-<!--
-  =====================================================
-  EXTRA FIX (agar phir bhi scroll ho):
-  Contact section (#section_5) ki closing tag ke baad
-  yeh class check karein:
-  
-  <section class="contact-section section-padding" ...>
-  
-  "section-padding" class mein padding-bottom hoti hai.
-  Isko remove karne ke liye section tag mein yeh add karein:
-  style="padding-bottom: 0 !important;"
-  =====================================================
--->
+        </footer>
     </main>
 
+    <!-- JavaScript for Continuous Slide -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var myCarousel = document.getElementById('clientCarousel');
+            if (myCarousel) {
+                var existingInstance = bootstrap.Carousel.getInstance(myCarousel);
+                if (existingInstance) {
+                    existingInstance.dispose();
+                }
+                var carousel = new bootstrap.Carousel(myCarousel, {
+                    interval: 3000,
+                    wrap: true,
+                    pause: false,
+                    ride: 'carousel'
+                });
+            }
+        });
+    </script>
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
@@ -1014,7 +931,6 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/custom.js"></script>
-
 </body>
 
 </html>
