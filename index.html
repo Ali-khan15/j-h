@@ -304,32 +304,58 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1" style="background-image: url('images/bg-7.png'); background-size: cover; background-position: top; background-repeat: no-repeat; position: relative;">
-            <div class="section-overlay" style="background-color: #000 !important; opacity: 0;"></div>
-            <div class="container" style="position: relative; z-index: 3;">
-                <div class="row">
-                    <div class="col-lg-12 col-12 text-start">
-                        <h2 class="text-white">J & H Painting</h2>
-                        <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                            <span class="cd-words-wrapper d-block text-start" style="width: 100%;">
-                                <b class="is-visible" style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">with Expert Painting Services</b>
-                                <b style="color: #6dbedf !important; display: inline-block; width: 100%; text-align: left;">Professional</b>
-                                <b style="color: #6d16df !important; display: inline-block; width: 100%; text-align: left;">Reliable</b>
-                                <b style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">Beautiful</b>
-                            </span>
-                        </h1>
-                        <p class="text-white mb-4" style="max-width: 800px;">From color consultation to flawless finishes,<br> J & H Painting provides premium interior and<br> exterior painting services across Florida.</p>
-                        <div class="custom-btn-group">
-                            <a href="#section_2" class="btn custom-btn smoothscroll me-3" style="background-color: #6d16df; border-color: #6d16df; color: white;">GET A FREE QUOTE</a>
-                            <a href="#section_3" class="link smoothscroll" style="color: #0dbbc9;">CALL NOW</a>
-                        </div>
-                    </div>
+     <section class="hero-section d-flex justify-content-center align-items-center" id="section_1" style="position: relative; overflow: hidden; min-height: 100vh;">
+    
+    <!-- Layer 1: Green Background -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #0d4d3d; z-index: 0;"></div>
+    
+    <!-- Layer 2: Circle Background -->
+    <div style="position: absolute; top: 50%; right: -100px; transform: translateY(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,215,0,0.15) 0%, rgba(255,215,0,0) 70%); border-radius: 50%; z-index: 1;"></div>
+    
+    <!-- Yellow Circle -->
+    <div style="position: absolute; top: 50%; right: 150px; transform: translateY(-50%); width: 400px; height: 400px; background-color: #FFD700; border-radius: 50%; z-index: 2;"></div>
+    
+    <!-- ✅ Image Above Yellow Circle -->
+    <img src="images/bg-green.png"
+     style="position: absolute; 
+            top: 60%; 
+            right: 150px; 
+            transform: translateY(-50%);
+            height: 450px; 
+            width: auto; 
+            z-index: 3;" />
+
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%); z-index: 4;"></div>
+
+    <!-- Rest of your content unchanged -->
+    
+    <div class="container" style="position: relative; z-index: 5;">
+        <div class="row">
+            <div class="col-lg-12 col-12 text-start">
+                <h2 class="text-white">J & H Painting</h2>
+                <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                    <span class="cd-words-wrapper d-block text-start" style="width: 100%;">
+                        <b class="is-visible" style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">with Expert Painting Services</b>
+                        <b style="color: #6dbedf !important; display: inline-block; width: 100%; text-align: left;">Professional</b>
+                        <b style="color: #6d16df !important; display: inline-block; width: 100%; text-align: left;">Reliable</b>
+                        <b style="color: #0dbbc9 !important; display: inline-block; width: 100%; text-align: left;">Beautiful</b>
+                    </span>
+                </h1>
+                <p class="text-white mb-4" style="max-width: 800px;">
+                    From color consultation to flawless finishes,<br>
+                    J & H Painting provides premium interior and<br>
+                    exterior painting services across Florida.
+                </p>
+                <div class="custom-btn-group">
+                    <a href="#section_2" class="btn custom-btn smoothscroll me-3" style="background-color: #6d16df; border-color: #6d16df; color: white;">GET A FREE QUOTE</a>
+                    <a href="#section_3" class="link smoothscroll" style="color: #0dbbc9;">CALL NOW</a>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2;">
-                <path fill="#6d16df" fill-opacity="1" d="M0,140L34.3,120C68.6,100,137,60,206,56.6C274.3,53.2,343,86.5,411,90C480,93.5,549,66.5,617,76.5C685.7,86.5,754,133,823,150C891.4,167,960,153,1029,140C1097.1,127,1166,113,1234,100C1302.9,87,1371,73,1406,66.5L1440,60L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-            </svg>
-        </section>
+        </div>
+    </div>
+
+</section>
 
         <!-- About Section -->
         <section class="about-section section-padding" id="section_2" style="padding: 120px 0 !important;">
