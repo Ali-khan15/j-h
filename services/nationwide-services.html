@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nationwide Project Services | J&H Painting</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #322e2f;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        /* Hero Section with Image */
+        .hero-section {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            color: white;
+            padding-left: 5%;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white !important;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            color: white !important;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        
+        /* Back Link */
+        .back-link {
+            margin-bottom: 30px;
+        }
+        
+        .back-link a {
+            color: #6d16df;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .back-link a:hover {
+            color: #0dbbc9;
+        }
+        
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        /* Image Blocks */
+        .image-block {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .image-block img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 15px;
+            background: white;
+            font-weight: 500;
+            color: #6d16df;
+            border-bottom: 3px solid #0dbbc9;
+        }
+        
+        .project-caption {
+            background: linear-gradient(135deg, #6d16df, #0dbbc9);
+            color: white;
+            padding: 20px;
+            border-radius: 0 0 15px 15px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .project-caption i {
+            margin-right: 8px;
+            color: #FFD700;
+        }
+        
+        /* Text Blocks */
+        .text-block {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #322e2f;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #322e2f;
+            margin: 40px 0 20px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #6d16df;
+            margin: 30px 0 15px;
+        }
+        
+        p {
+            font-size: 1rem;
+            color: #322e2f;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "•";
+            color: #0dbbc9;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        
+        /* Divider */
+        .divider {
+            margin: 40px 0;
+            border: 0;
+            border-top: 2px dashed #6d16df;
+            opacity: 0.3;
+        }
+        
+        /* Credibility Badge */
+        .credibility-badge {
+            margin-top: 40px;
+            padding: 25px;
+            background: linear-gradient(135deg, #6d16df10, #0dbbc910);
+            border-radius: 15px;
+            text-align: center;
+            border-left: 5px solid #6d16df;
+            border-right: 5px solid #0dbbc9;
+        }
+        
+        .credibility-badge p {
+            margin: 0;
+            font-weight: 600;
+            color: #6d16df;
+            font-size: 1.1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 300px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .image-block img {
+                height: 250px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Image -->
+    <section class="hero-section">
+        <img src="../images/nationwide-hero.jpg" alt="Nationwide Project Services" class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Nationwide Project<br>Services</h1>
+                <p>Scalable crews serving clients across the United States</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Back Link -->
+        <div class="back-link">
+            <a href="../index.html#section_3"><i class="bi bi-arrow-left"></i> Back to Services</a>
+        </div>
+
+        <!-- Introduction -->
+        <div class="text-block">
+            <p>Based in Florida and serving clients across the United States, J&H Painting provides nationwide painting and coating services for commercial, residential, and large-scale construction projects. Our scalable crews and structured project coordination allow us to efficiently mobilize for travel projects while maintaining consistent quality and dependable scheduling.</p>
+            <p class="mb-0">We regularly support general contractors, builders, and property managers on multi-location and out-of-state projects requiring professional execution and reliable workforce deployment.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Scope Section with Image -->
+        <h2>Scope Includes:</h2>
+        <div class="content-grid">
+            <div>
+                <ul>
+                    <li>Nationwide commercial painting projects</li>
+                    <li>Out-of-state new construction and builder work</li>
+                    <li>Multi-location project support</li>
+                    <li>Large-scale repaint and renovation projects</li>
+                    <li>Travel crew deployment and coordination</li>
+                    <li>Phased scheduling for large developments</li>
+                    <li>Punch list and project closeout services</li>
+                    <li>Coordination with GCs, superintendents, and project teams</li>
+                </ul>
+            </div>
+            <div class="image-block">
+                <img src="../images/nationwide-scope.jpg" alt="Nationwide Scope">
+                <div class="image-caption">Nationwide Project Capabilities</div>
+                <div class="project-caption">
+                    <i class="bi bi-building"></i> Historic 1940 Airport Hangar Rehabilitation - Alabama<br>
+                    <small style="font-size: 0.9rem; opacity: 0.9;">Exterior surface preparation, commercial coatings, and lift-access painting performed on a large-scale aviation facility in accordance with project specifications and jobsite safety requirements.</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Scalable Crews Section -->
+        <h3>Scalable Crews & Project Coordination</h3>
+        <div class="content-grid">
+            <div class="image-block">
+                <img src="../images/nationwide-crews.jpg" alt="Scalable Crews">
+                <div class="image-caption">Scalable Workforce</div>
+            </div>
+            <div>
+                <p>J&H Painting is equipped to scale crew sizes based on project demands, timelines, and scope. Our team coordinates travel logistics, scheduling, and on-site execution to ensure efficient workflow and consistent performance across multiple job locations.</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Jobsite Experience Section -->
+        <h3>Experience in Active Jobsite Environments</h3>
+        <div class="content-grid">
+            <div>
+                <p>Our crews are experienced in working on active construction sites, occupied facilities, and fast-paced commercial environments. We maintain professional jobsite practices, clear communication, and schedule alignment to support project milestones and deadlines.</p>
+            </div>
+            <div class="image-block">
+                <img src="../images/nationwide-jobsite.jpg" alt="Jobsite Experience">
+                <div class="image-caption">Active Jobsite Experience</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Projects Section -->
+        <h3>Types of Projects We Support Nationwide</h3>
+        <div class="content-grid">
+            <div>
+                <ul>
+                    <li>Commercial Developments</li>
+                    <li>Builder Communities & Multi-Unit Projects</li>
+                    <li>Retail & Office Facilities</li>
+                    <li>Schools & Institutional Projects</li>
+                    <li>Large-Scale Repaints & Renovations</li>
+                    <li>New Construction Projects</li>
+                </ul>
+            </div>
+            <div class="image-block">
+                <img src="../images/nationwide-types.jpg" alt="Project Types">
+                <div class="image-caption">Serving Projects Nationwide</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Closing Statement -->
+        <div class="text-block">
+            <p style="font-size: 1.1rem; font-style: italic;">J&H Painting delivers reliable nationwide service, professional finishes, and scalable crews capable of supporting projects of all sizes across the United States.</p>
+        </div>
+
+        <!-- Credibility Badge -->
+        <div class="credibility-badge">
+            <p>Fully Licensed & Insured • Commercial & Residential • Serving Projects Nationwide</p>
+        </div>
+    </div>
+</body>
+</html>

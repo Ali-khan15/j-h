@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Preparation & Drywall Services | J&H Painting</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #322e2f;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        /* Hero Section with Image */
+        .hero-section {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            color: white;
+            padding-left: 5%;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white !important;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            color: white !important;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        
+        /* Back Link */
+        .back-link {
+            margin-bottom: 30px;
+        }
+        
+        .back-link a {
+            color: #6d16df;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .back-link a:hover {
+            color: #0dbbc9;
+        }
+        
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        /* Image Blocks */
+        .image-block {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        .image-block img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 15px;
+            background: white;
+            font-weight: 500;
+            color: #6d16df;
+            border-bottom: 3px solid #0dbbc9;
+        }
+        
+        /* Text Blocks */
+        .text-block {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #322e2f;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #322e2f;
+            margin: 40px 0 20px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #6d16df;
+            margin: 30px 0 15px;
+        }
+        
+        p {
+            font-size: 1rem;
+            color: #322e2f;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "•";
+            color: #0dbbc9;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        
+        /* Divider */
+        .divider {
+            margin: 40px 0;
+            border: 0;
+            border-top: 2px dashed #6d16df;
+            opacity: 0.3;
+        }
+        
+        /* Credibility Badge */
+        .credibility-badge {
+            margin-top: 40px;
+            padding: 25px;
+            background: linear-gradient(135deg, #6d16df10, #0dbbc910);
+            border-radius: 15px;
+            text-align: center;
+            border-left: 5px solid #6d16df;
+            border-right: 5px solid #0dbbc9;
+        }
+        
+        .credibility-badge p {
+            margin: 0;
+            font-weight: 600;
+            color: #6d16df;
+            font-size: 1.1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 300px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .image-block img {
+                height: 250px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Image -->
+    <section class="hero-section">
+        <img src="../images/prep-hero.jpg" alt="Surface Preparation & Drywall" class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Surface Preparation<br>& Drywall Services</h1>
+                <p>The foundation of durable, professional finishes</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Back Link -->
+        <div class="back-link">
+            <a href="../index.html#section_3"><i class="bi bi-arrow-left"></i> Back to Services</a>
+        </div>
+
+        <!-- Introduction -->
+        <div class="text-block">
+            <p>J&H Painting provides professional surface preparation and drywall services for commercial, residential, and new construction projects across Florida and nationwide. Proper preparation is the foundation of a durable and high-quality finish, and our team follows structured prep processes to ensure surfaces are properly repaired, primed, and ready for coating application.</p>
+            <p class="mb-0">We work in coordination with general contractors, builders, and property managers to prepare surfaces efficiently while maintaining jobsite cleanliness, safety, and schedule alignment.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Scope Section with Image -->
+        <h2>Scope Includes:</h2>
+        <div class="content-grid">
+            <div>
+                <ul>
+                    <li>Drywall repairs, patching, and finishing</li>
+                    <li>Surface sanding, skim coating, and smoothing</li>
+                    <li>Caulking, sealing, and joint preparation</li>
+                    <li>Minor wall and ceiling repairs</li>
+                    <li>Surface cleaning and coating removal</li>
+                    <li>Priming and substrate preparation</li>
+                    <li>Prep for repaint, renovation, and new construction projects</li>
+                    <li>Punch list repairs and final surface corrections</li>
+                </ul>
+            </div>
+            <div class="image-block">
+                <img src="../images/prep-scope.jpg" alt="Preparation Scope">
+                <div class="image-caption">Detailed Surface Preparation</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Preparation Process Section -->
+        <h3>Preparation Process & Quality Standards</h3>
+        <div class="content-grid">
+            <div class="image-block">
+                <img src="../images/prep-process.jpg" alt="Preparation Process">
+                <div class="image-caption">Quality-Focused Prep Process</div>
+            </div>
+            <div>
+                <p>J&H Painting follows a detailed preparation process that may include surface inspection, patching, sanding, caulking, priming, and final surface conditioning before any paint or coating application. This ensures proper adhesion, uniform finishes, and long-term durability across interior and exterior surfaces.</p>
+                <p>Our team understands that high-quality finishes begin with proper preparation, especially on large-scale commercial, multi-unit, and new construction projects.</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Jobsite Coordination Section -->
+        <h3>Jobsite Coordination & Efficiency</h3>
+        <div class="content-grid">
+            <div>
+                <p>We are experienced in working within active construction sites, occupied facilities, and renovation environments. Our crews coordinate with project managers and superintendents to complete preparation work in phases, supporting project timelines, inspections, and final turnovers.</p>
+            </div>
+            <div class="image-block">
+                <img src="../images/prep-coordination.jpg" alt="Jobsite Coordination">
+                <div class="image-caption">Efficient Jobsite Coordination</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Projects Section -->
+        <h3>Types of Projects We Serve</h3>
+        <div class="content-grid">
+            <div>
+                <ul>
+                    <li>New Construction Developments</li>
+                    <li>Commercial Buildings & Facilities</li>
+                    <li>Multi-Unit Residential Properties</li>
+                    <li>Tenant Build-Outs & Renovations</li>
+                    <li>Repaint & Restoration Projects</li>
+                    <li>Builder Communities & Production Projects</li>
+                </ul>
+            </div>
+            <div class="image-block">
+                <img src="../images/prep-types.jpg" alt="Project Types">
+                <div class="image-caption">Serving Diverse Project Types</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Closing Statement -->
+        <div class="text-block">
+            <p style="font-size: 1.1rem; font-style: italic;">Proper surface preparation and drywall finishing ensure long-lasting coatings, smooth finishes, and professional results on every project. J&H Painting delivers dependable prep work, detailed execution, and scalable crews capable of supporting projects nationwide.</p>
+        </div>
+
+        <!-- Credibility Badge -->
+        <div class="credibility-badge">
+            <p>Fully Licensed & Insured • Commercial & Residential • Serving Projects Nationwide</p>
+        </div>
+    </div>
+</body>
+</html>
